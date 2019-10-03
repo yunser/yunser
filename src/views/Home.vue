@@ -26,7 +26,45 @@
                         ]
                     },
                     {
-                        name: '客户端',
+                        name: '服务',
+                        apps: [
+                            {
+                                href: 'https://account.yunser.com/',
+                                to: 'xxx',
+                                target: '_blank',
+                                icon: 'https://icons.yunser.com/icons/account.svg',
+                                name: '账号',
+                                description: '',
+                            },
+                            {
+                                href: 'https://search.yunser.com',
+                                to: 'xxx',
+                                target: '_blank',
+                                icon: 'https://icons.yunser.com/icons/search.svg',
+                                name: '搜索',
+                                description: '',
+                                tags: ['生活']
+                            },
+                            {
+                                href: 'https://message.yunser.com/',
+                                to: 'xxx',
+                                target: '_blank',
+                                icon: 'https://icons.yunser.com/icons/hub.svg',
+                                name: '消息',
+                                description: '',
+                            },
+                            {
+                                href: 'https://feedback.yunser.com/',
+                                to: 'xxx',
+                                target: '_blank',
+                                icon: 'https://icons.yunser.com/icons/feedback.svg',
+                                name: '意见反馈',
+                                description: '对云设工具有什么意见，在这里留言',
+                            },
+                        ]
+                    },
+                    {
+                        name: '多平台',
                         apps: [
                             {
                                 to: 'xxx',
@@ -59,14 +97,6 @@
                         name: '其他',
                         apps: [
                             {
-                                href: 'https://account.yunser.com/',
-                                to: 'xxx',
-                                target: '_blank',
-                                icon: 'https://icons.yunser.com/icons/account.svg',
-                                name: '账号',
-                                description: '',
-                            },
-                            {
                                 href: 'https://about.yunser.com/',
                                 to: 'xxx',
                                 target: '_blank',
@@ -82,14 +112,7 @@
                                 name: '捐赠',
                                 description: '',
                             },
-                            {
-                                href: 'https://feedback.yunser.com/',
-                                to: 'xxx',
-                                target: '_blank',
-                                icon: 'https://icons.yunser.com/icons/feedback.svg',
-                                name: '意见反馈',
-                                description: '对云设工具有什么意见，在这里留言',
-                            },
+
                             {
                                 href: 'https://open.yunser.com/',
                                 to: 'xxx',
@@ -114,6 +137,15 @@
                                 name: '团队',
                                 description: '',
                             },
+                            {
+                                href: 'https://shop.yunser.com/',
+                                to: 'xxx',
+                                target: '_blank',
+                                icon: 'https://icons.yunser.com/icons/shop.svg',
+                                name: '购物',
+                                description: '',
+                            },
+                            
                         ]
                     },
                     // {
@@ -145,6 +177,20 @@
                 ],
                 page: {
                     menu: [
+                        {
+                            type: 'icon',
+                            icon: 'search',
+                            href: 'https://search.yunser.com?utm_source=yunser',
+                            target: '_blank',
+                            title: '搜索'
+                        },
+                        {
+                            type: 'icon',
+                            icon: 'message',
+                            href: 'https://message.yunser.com?utm_source=yunser',
+                            target: '_blank',
+                            title: '搜索'
+                        },
                         {
                             type: 'icon',
                             icon: 'apps',
