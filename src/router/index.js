@@ -30,14 +30,14 @@ let router = new Router({
 })
 
 router.beforeEach((to, from, next) => {
-    if (_hmt) {
-        console.log('正确统计')
-        if (to.path) {
-            _hmt.push(['_trackPageview', '' + to.fullPath]);
-        }
-    } else {
-        console.log('无法正确统计')
-    }
+    // if (_hmt) {
+    //     console.log('正确统计')
+    //     if (to.path) {
+    //         _hmt.push(['_trackPageview', '' + to.fullPath]);
+    //     }
+    // } else {
+    //     console.log('无法正确统计')
+    // }
     next();
 });
 

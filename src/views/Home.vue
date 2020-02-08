@@ -1,6 +1,10 @@
 <template>
     <my-page title="云设" :page="page">
         <div class="common-container container">
+            <div class="notice">
+                <div class="title">公告</div>
+                <div class="content">最近 CDN 不稳定，可能会导致很多网站无法访问，敬请见谅。</div>
+            </div>
             <app-list :data="groups" />
         </div>
     </my-page>
@@ -138,6 +142,14 @@
                                 description: '',
                             },
                             {
+                                href: 'https://software.yunser.com/',
+                                to: 'xxx',
+                                target: '_blank',
+                                icon: 'https://icons.yunser.com/icons/about.svg',
+                                name: '源码&定制',
+                                description: '',
+                            },
+                            {
                                 href: 'https://shop.yunser.com/',
                                 to: 'xxx',
                                 target: '_blank',
@@ -145,7 +157,22 @@
                                 name: '购物',
                                 description: '',
                             },
-                            
+                            {
+                                href: 'https://policy.yunser.com/',
+                                to: 'xxx',
+                                target: '_blank',
+                                icon: 'https://icons.yunser.com/icons/about.svg',
+                                name: '隐私政策',
+                                description: '',
+                            },
+                            {
+                                href: 'https://pay.yunser.com/',
+                                to: 'xxx',
+                                target: '_blank',
+                                icon: 'https://icons.yunser.com/icons/tool.svg',
+                                name: '支付',
+                                description: '',
+                            },
                         ]
                     },
                     // {
@@ -205,5 +232,21 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.notice {
+    max-width: 480px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+    .title {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .content {
+        color: #666;
+    }
+}
 </style>
