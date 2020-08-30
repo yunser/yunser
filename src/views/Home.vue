@@ -1,11 +1,14 @@
 <template>
     <my-page title="云设" :page="page">
         <div class="common-container container">
-            <div class="notice">
+            <!-- <div class="notice">
                 <div class="title">公告</div>
                 <div class="content">最近 CDN 不稳定，可能会导致很多网站无法访问，敬请见谅。</div>
-            </div>
+            </div> -->
             <app-list :data="groups" />
+            <div class="icp">
+                <a href="http://beian.miit.gov.cn/" target="_blank">粤ICP备17154000号</a>
+            </div>
         </div>
     </my-page>
 </template>
@@ -22,7 +25,7 @@
                             {
                                 name: '应用',
                                 desc: '',
-                                icon: 'https://icons.yunser.com/icons/app.svg',
+                                icon: 'https://icons.yunser.com/icons/app.png',
                                 to: 'xxx',
                                 href: 'https://app.yunser.com/',
                                 target: '_blank'
@@ -74,7 +77,7 @@
                                 to: 'xxx',
                                 href: 'https://extension.yunser.com/',
                                 target: '_blank',
-                                icon: 'https://icons.yunser.com/icons/extension.svg',
+                                icon: 'https://icons.yunser.com/icons/extension.png',
                                 name: '超级拓展',
                                 description: '',
                                 tags: ['生活']
@@ -83,7 +86,7 @@
                                 to: 'xxx',
                                 href: 'https://pc.yunser.com/',
                                 target: '_blank',
-                                icon: 'https://icons.yunser.com/icons/tool.svg',
+                                icon: 'https://icons.yunser.com/icons/tool.png',
                                 name: '超级工具',
                                 description: '',
                             },
@@ -91,7 +94,7 @@
                                 to: 'xxx',
                                 href: 'https://client.yunser.com/',
                                 target: '_blank',
-                                icon: 'https://icons.yunser.com/icons/tool.svg',
+                                icon: 'https://icons.yunser.com/icons/client.png',
                                 name: '客户端',
                                 description: '',
                             },
@@ -101,27 +104,29 @@
                         name: '其他',
                         apps: [
                             {
-                                href: 'https://about.yunser.com/',
+                                href: 'https://help.yunser.com/',
                                 to: 'xxx',
                                 target: '_blank',
-                                icon: 'https://icons.yunser.com/icons/about.svg',
-                                name: '关于',
+                                icon: 'https://icons.yunser.com/icons/help.png',
+                                // icon: 'https://help.yunser.com/static/img/help.png',
+                                name: '帮助',
                                 description: '',
                             },
                             {
-                                href: 'https://donation.yunser.com/',
+                                href: 'https://about.yunser.com/',
                                 to: 'xxx',
                                 target: '_blank',
-                                icon: 'https://icons.yunser.com/icons/donate.svg',
-                                name: '捐赠',
+                                icon: 'https://icons.yunser.com/icons/about.png',
+                                name: '关于',
                                 description: '',
                             },
+                            
 
                             {
                                 href: 'https://open.yunser.com/',
                                 to: 'xxx',
                                 target: '_blank',
-                                icon: 'https://icons.yunser.com/icons/tool.svg',
+                                icon: 'https://icons.yunser.com/icons/open.png',
                                 name: '开放平台',
                                 description: '',
                             },
@@ -134,34 +139,10 @@
                                 description: '',
                             },
                             {
-                                href: 'https://team.yunser.com/',
-                                to: 'xxx',
-                                target: '_blank',
-                                icon: 'https://icons.yunser.com/icons/team.svg',
-                                name: '团队',
-                                description: '',
-                            },
-                            {
-                                href: 'https://software.yunser.com/',
-                                to: 'xxx',
-                                target: '_blank',
-                                icon: 'https://icons.yunser.com/icons/about.svg',
-                                name: '源码&定制',
-                                description: '',
-                            },
-                            {
-                                href: 'https://shop.yunser.com/',
-                                to: 'xxx',
-                                target: '_blank',
-                                icon: 'https://icons.yunser.com/icons/shop.svg',
-                                name: '购物',
-                                description: '',
-                            },
-                            {
                                 href: 'https://policy.yunser.com/',
                                 to: 'xxx',
                                 target: '_blank',
-                                icon: 'https://icons.yunser.com/icons/about.svg',
+                                icon: 'https://icons.yunser.com/icons/policy.svg',
                                 name: '隐私政策',
                                 description: '',
                             },
@@ -169,8 +150,16 @@
                                 href: 'https://pay.yunser.com/',
                                 to: 'xxx',
                                 target: '_blank',
-                                icon: 'https://icons.yunser.com/icons/tool.svg',
+                                icon: 'https://icons.yunser.com/icons/pay.svg',
                                 name: '支付',
+                                description: '',
+                            },
+                            {
+                                href: 'https://setting.yunser.com/',
+                                to: 'xxx',
+                                target: '_blank',
+                                icon: 'https://icons.yunser.com/icons/setting.png',
+                                name: '设置',
                                 description: '',
                             },
                         ]
@@ -248,5 +237,9 @@
     .content {
         color: #666;
     }
+}
+.icp {
+    margin-top: 80px;
+    text-align: center;
 }
 </style>
